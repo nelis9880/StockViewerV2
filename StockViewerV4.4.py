@@ -26,7 +26,7 @@ st.markdown('<h1 class="main-title">StockViewer</h1>', unsafe_allow_html=True)
 # Sidebar voor inputs
 with st.sidebar:
     st.header("Instellingen")
-    ticker = st.text_input("Ticker", value="AAPL", placeholder="Bijv. AAPL, MSFT, GOOG")
+    ticker = st.text_input("Ticker", value="", placeholder="Bijv. AAPL, MSFT, GOOG")
     period = st.selectbox("Periode", ["1mo", "3mo", "6mo", "1y", "5y"], index=3)
 
 # Helper functies
